@@ -2,7 +2,7 @@
 * @Author: eleven
 * @Date:   2017-11-07 10:46:00
 * @Last Modified by:   eleven
-* @Last Modified time: 2017-11-08 14:09:19
+* @Last Modified time: 2017-11-08 14:32:57
 */
 
 const path = require('path');
@@ -51,6 +51,9 @@ module.exports = {
 		compress: true,
 		port: 9000,
 	  	open: true,
-	  	quiet: true
+	  	quiet: true,
+	  	overlay: {
+		  errors: true
+		}
 	}
 }
