@@ -2,7 +2,7 @@
 * @Author: eleven
 * @Date:   2017-11-07 10:46:00
 * @Last Modified by:   eleven
-* @Last Modified time: 2017-11-09 23:55:19
+* @Last Modified time: 2017-11-10 01:22:41
 */
 
 const path = require('path')
@@ -15,7 +15,7 @@ module.exports = {
     entry: path.resolve(__dirname, 'example'),
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: '[name].js'
     },
     module: {
         rules: [{
@@ -29,14 +29,11 @@ module.exports = {
         }, {
             test: /\.js$/,
             loader: 'babel-loader',
-            exclude: /node_modules/,
-            options: {
-                presets: ['env']
-            }
+            exclude: /node_modules/
         }]
     },
     resolve: {
-        extensions: ['.js', '.json', '.jsx', '.css'],
+        extensions: ['.js', '.json', '.jsx'],
         alias: {}
     },
     plugins: [

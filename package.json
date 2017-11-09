@@ -1,15 +1,17 @@
 {
   "author": "Eleven",
-  "dependencies": {
-    "babel-loader": "^7.1.2"
-  },
+  "dependencies": {},
   "scripts": {
     "start": "webpack-dev-server --color --progress --config webpack.config.js",
     "build": "node build/build.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
     "clean-webpack-plugin": "^0.1.17",
     "eslint": "^4.10.0",
     "eslint-config-standard": "^10.2.1",
