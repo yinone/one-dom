@@ -2,7 +2,7 @@
 * @Author: eleven
 * @Date:   2017-11-07 10:46:00
 * @Last Modified by:   eleven
-* @Last Modified time: 2017-11-10 01:22:41
+* @Last Modified time: 2017-11-10 02:22:52
 */
 
 const path = require('path')
@@ -43,6 +43,7 @@ module.exports = {
         new webpack.NamedModulesPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
+            template: path.resolve('index.html'),
             inject: true
         }),
         new FriendlyErrorsPlugin()
