@@ -12,6 +12,7 @@ module.exports = {
     	'indent': 0,
     	'no-tabs': 0,
     	'eol-last': 0,
+    	'no-undef': 0,
         'arrow-parens': 0,
         'no-trailing-spaces': 0,
         'generator-star-spacing': 0,
@@ -19,6 +20,6 @@ module.exports = {
         'import/extensions': ['error', 'always', {
             'js': 'never',
         }],
-        
+
     }
 }
