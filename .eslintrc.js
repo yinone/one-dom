@@ -20,6 +20,6 @@ module.exports = {
         'import/extensions': ['error', 'always', {
             'js': 'never',
         }],
-
+    	'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
     }
 }
