@@ -14,6 +14,7 @@ module.exports = {
     	'eol-last': 0,
     	'no-undef': 0,
         'arrow-parens': 0,
+        'no-unused-vars': 0,
         'no-trailing-spaces': 0,
         'generator-star-spacing': 0,
         'space-before-function-paren': 0,

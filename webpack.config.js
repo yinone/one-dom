@@ -2,7 +2,7 @@
 * @Author: eleven
 * @Date:   2017-11-07 10:46:00
 * @Last Modified by:   eleven
-* @Last Modified time: 2017-11-10 02:22:52
+* @Last Modified time: 2017-11-13 00:38:59
 */
 
 const path = require('path')
@@ -27,7 +27,7 @@ module.exports = {
                 formatter: require('eslint-friendly-formatter')
             }
         }, {
-            test: /\.js$/,
+            test: /\.jsx?$/,
             loader: 'babel-loader',
             exclude: /node_modules/
         }]
