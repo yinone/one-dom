@@ -2,7 +2,7 @@
 * @Author: eleven
 * @Date:   2017-11-07 10:46:23
 * @Last Modified by:   eleven
-* @Last Modified time: 2017-11-13 01:20:52
+* @Last Modified time: 2017-11-14 23:47:04
 */
 
 /** @jsx h */
@@ -14,7 +14,16 @@ const content = `
 	padding: 0;
 	text-align: center;`
 
-const node = <div style={ content }><p style="font-size: 18px; background-color: #ddd">hello virtual dom</p></div>
+const node = (
+	<div style={ content } className="content">
+		<input type="text" disabled={ false } style="border: 1px solid #ddd" />
+		<p style="font-size: 18px; background-color: #ddd">hello virtual dom</p>
+	</div>
+)
+
+function handler(evt) {
+	console.log(evt)
+}
 
 console.log(node)
 const dom = createElement(node)
