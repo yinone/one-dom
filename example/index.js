@@ -2,7 +2,7 @@
 * @Author: eleven
 * @Date:   2017-11-07 10:46:23
 * @Last Modified by:   eleven
-* @Last Modified time: 2017-11-14 23:47:04
+* @Last Modified time: 2017-11-14 23:56:51
 */
 
 /** @jsx h */
@@ -16,7 +16,7 @@ const content = `
 
 const node = (
 	<div style={ content } className="content">
-		<input type="text" disabled={ false } style="border: 1px solid #ddd" />
+		<input type="text" disabled={ true } style="border: 1px solid #ddd" />
 		<p style="font-size: 18px; background-color: #ddd">hello virtual dom</p>
 	</div>
 )
