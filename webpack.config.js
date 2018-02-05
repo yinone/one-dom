@@ -2,7 +2,7 @@
 * @Author: eleven
 * @Date:   2017-11-07 10:46:00
 * @Last Modified by:   eleven
-* @Last Modified time: 2017-11-13 00:38:59
+* @Last Modified time: 2018-02-05 19:41:47
 */
 
 const path = require('path')
@@ -30,7 +30,14 @@ module.exports = {
             test: /\.jsx?$/,
             loader: 'babel-loader',
             exclude: /node_modules/
-        }]
+        }, {
+	        test: /\.styl$/,
+	        use: [
+	          'style-loader',
+	          'css-loader',
+	          'stylus-loader'
+	        ]
+      	}]
     },
     resolve: {
         extensions: ['.js', '.json', '.jsx'],

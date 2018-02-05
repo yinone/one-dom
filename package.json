@@ -1,7 +1,8 @@
 {
   "author": "Eleven",
   "dependencies": {
-    "ava": "^0.23.0"
+    "ava": "^0.23.0",
+    "normalize.css": "^7.0.0"
   },
   "scripts": {
     "start": "webpack-dev-server --color --progress --config webpack.config.js",
@@ -26,6 +27,8 @@
     "eslint-plugin-standard": "^3.0.1",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"
   },
