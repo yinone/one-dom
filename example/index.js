@@ -2,13 +2,13 @@
 * @Author: eleven
 * @Date:   2017-11-07 10:46:23
 * @Last Modified by:   eleven
-* @Last Modified time: 2018-02-05 19:53:37
+* @Last Modified time: 2018-02-05 20:03:28
 */
 
 /** @jsx h */
 
 import { h, createElement } from '../lib'
-import 'style.styl'
+require('./style.styl')
 
 const content = `
 	margin: 0;

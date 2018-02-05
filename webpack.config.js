@@ -2,7 +2,7 @@
 * @Author: eleven
 * @Date:   2017-11-07 10:46:00
 * @Last Modified by:   eleven
-* @Last Modified time: 2018-02-05 19:41:47
+* @Last Modified time: 2018-02-05 20:11:51
 */
 
 const path = require('path')
@@ -32,14 +32,11 @@ module.exports = {
             exclude: /node_modules/
         }, {
 	        test: /\.styl$/,
-	        use: [
-	          'style-loader',
-	          'css-loader',
-	          'stylus-loader'
-	        ]
+	        loader: 'style-loader!css-loader!stylus-loader'
       	}]
     },
     resolve: {
+    	modules: ['node_modules', 'web_modules', 'bower_components'],
         extensions: ['.js', '.json', '.jsx'],
         alias: {}
     },
