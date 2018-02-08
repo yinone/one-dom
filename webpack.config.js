@@ -2,7 +2,7 @@
 * @Author: eleven
 * @Date:   2017-11-07 10:46:00
 * @Last Modified by:   eleven
-* @Last Modified time: 2018-02-05 20:11:51
+* @Last Modified time: 2018-02-08 19:05:39
 */
 
 const path = require('path')
@@ -31,8 +31,31 @@ module.exports = {
             loader: 'babel-loader',
             exclude: /node_modules/
         }, {
+        	test: /\.scss$/,
+        	use: [
+        		'style-loader',
+	        	'css-loader',
+	        	{
+	        		loader: 'postcss-loader',
+	        		options: {
+			        	sourceMap: 'inline'
+			        }
+	        	},
+	        	'sass-loader'
+        	]
+        }, {
 	        test: /\.styl$/,
-	        loader: 'style-loader!css-loader!stylus-loader'
+	        use: [
+	        	'style-loader',
+	        	'css-loader',
+	        	{
+	        		loader: 'postcss-loader',
+	        		options: {
+			        	sourceMap: 'inline'
+			        }
+	        	},
+	        	'stylus-loader'
+	        ]
       	}]
     },
     resolve: {
